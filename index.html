@@ -17,7 +17,10 @@
         <link rel="import" href="components/core-item/core-item.html">
         <link rel="import" href="components/core-menu/core-submenu.html">
         <link rel="import" href="components/paper-icon-button/paper-icon-button.html">
-        <link rel="import" href="components/paper-fab/paper-fab.html">    <style>
+        <link rel="import" href="components/paper-fab/paper-fab.html">    
+        <link rel="import" href="components/paper-elements/paper-elements.html">
+        
+        <style>
 
       body {
         font-family: RobotoDraft, sans-serif;
@@ -31,15 +34,32 @@
         -webkit-touch-callout: none;
       }
       
+        #search{
+            background-color: #FFF;
+            width: 250px;
+            height: 300px;
+        }
+            
+        #search section{
+            margin: 0 auto;
+            margin-top: 200px;
+        }
+    
+            
+        
     </style>
     </head>
     
     <body>
         <elisabeth-scaffold label="Elisabeth" fit touch-action="auto">
             <paper-icon-button class="menuButton" icon="menu" ></paper-icon-button>
-            <core-item label="Slider" tag="paper-slider" url="../paper-slider/demo.html"></core-item>
-                
         </elisabeth-scaffold>
+        
+        <div id="search">
+            <section>
+                <paper-input label="Type something..."></paper-input>
+            </section>
+        </div>
     </body>
 
 </html>
